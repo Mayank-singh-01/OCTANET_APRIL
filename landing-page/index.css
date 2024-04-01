@@ -1,6 +1,6 @@
 * {
    margin: 0;
-   padding: 9px 0 0 0 ;
+   padding: 0 ;
    font-family: sans-serif;
    color: antiquewhite;
 }
@@ -8,11 +8,20 @@ body {
    background-image: url(../image/one.jpg);
       background-size: cover;
       background-repeat: no-repeat; 
-      /* height: 100vh; */
 }
-.navbar a{
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   position: fixed;
+   z-index: 5;
+   padding: 13px;
+   background-image: url(../image/one.jpg);
+   width: 100%;
+}
+ .navbar a{
    text-decoration: none;
-   padding: 5px 18px;
+   padding: 4px 21px;
    margin-right: 4rem;
    font-size:larger;
    font-weight: 500;
@@ -24,12 +33,8 @@ body {
    color: rgb(236, 12, 12);
    transition: 150ms ease-in-out 0.1s;
 }
-.navbar {
-   display: flex;
-   flex-wrap: nowrap;
-   justify-content: flex-end;
-}
 .hero {
+   padding-top: 60px;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -37,21 +42,19 @@ body {
    font-size: large;
 }
 .info p{
-   color:darksalmon;
+   color: darksalmon;
    font-weight: 600;
-   font-size:3rem;;
+   font-size: 55px;
    text-transform: uppercase;
-}
-.info p:nth-child(3){
-   font-size: 2rem;
+   margin-bottom: 3px;
 }
 .button {
-   padding-top: 60px;
+   padding-top: 50px;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
 }
-.button a {
+.button a{
    margin-right: 27px;
    text-decoration: none;
    padding: 5px 18px;
@@ -64,4 +67,59 @@ body {
    background-color: beige;
    color: rgb(236, 12, 12);
    transition: 150ms ease-in-out 0.1s;
+}
+#Features{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+}
+#Features p{
+   text-transform: capitalize;
+   text-align: center;
+   text-decoration: none;
+   margin-bottom: 35px;
+   padding: 13px 25px;
+   margin-right: 4rem;
+   font-size: larger;
+   font-weight: 700;
+   border: 2px solid darksalmon;
+   border-radius: 50px;
+   background-color: beige;
+   color: rgb(222, 114, 77);
+}
+#Features p:hover{
+   color: beige;
+   background-color: rgb(209, 118, 87);
+   border: 2px solid beige;
+   transition: 140ms ease-in-out 0.1s;
+}
+#first-hr{
+   border-color:rgb(25, 80, 180);
+   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+#team{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.person{
+   text-align: center;
+   background-image: url(../image/one.jpg);
+   border-radius: 35px;
+   padding: 20px;
+   font-size: x-large;
+   margin: 27px 53px;
+}
+.person:hover{
+   background-image: url(../image/four.jpg);
+   transition: 160ms ease-in-out 0.1s;
+}
+.person p{
+   padding-top: 10px;
+   color: darksalmon;
+}
+.person img{
+   border-radius: 50%;
 }
