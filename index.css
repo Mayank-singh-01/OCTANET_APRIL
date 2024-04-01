@@ -1,6 +1,6 @@
 * {
    margin: 0;
-   padding: 8px 0 0 0 ;
+   padding: 9px 0 0 0 ;
    font-family: sans-serif;
    color: antiquewhite;
 }
@@ -11,17 +11,16 @@ body {
 }
 .navbar a{
    text-decoration: none;
-   padding: 4px 18px;
+   padding: 5px 18px;
    margin-right: 70px;
    font-size:larger;
    font-weight: 500;
-   border: 2px solid whitesmoke;
-   border-radius: 50px;
-   
+   border: 2px solid darksalmon;
+   border-radius: 50px;  
 }
 .navbar a:hover{
    background-color:beige;
-   color: brown;
+   color: rgb(236, 12, 12);
    transition: 150ms ease-in-out 0.1s;
 }
 .navbar {
@@ -29,9 +28,39 @@ body {
    flex-wrap: nowrap;
    justify-content: flex-end;
 }
-/* .hero {
+.hero {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-} */
+   font-size: large;
+}
+.info p{
+   color:darksalmon;
+   font-weight: 600;
+   font-size:3rem;;
+   text-transform: uppercase;
+}
+.info p:nth-child(3){
+   font-size: 2rem;
+}
+.button {
+   padding-top: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.button a {
+   margin-right: 27px;
+   text-decoration: none;
+   padding: 5px 18px;
+   font-size: larger;
+   font-weight: 500;
+   border: 2px solid darksalmon;
+   border-radius: 50px;
+}
+.button a:hover {
+   background-color: beige;
+   color: rgb(236, 12, 12);
+   transition: 150ms ease-in-out 0.1s;
+}
