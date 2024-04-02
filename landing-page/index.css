@@ -10,20 +10,28 @@ body {
       background-repeat: no-repeat; 
 }
                /* navigation bar */
-.navbar{
+#home{
+   margin-left: 21px;
+}
+#mynev{
    display: flex;
    align-items: center;
-   justify-content: end;
+   justify-content: space-between;
    position: fixed;
-   z-index: 5;
-   padding: 13px;
+   z-index: 50;
+   padding: 18px;
    background-image: url(../image/one.jpg);
    width: 100%;
 }
+@media screen and (max-width: 600px) {
+   .navbar {
+      display: none;
+   }
+}
  .navbar a{
    text-decoration: none;
-   padding: 4px 21px;
-   margin-right: 4rem;
+   padding: 4px 20px;
+   margin-right: 3.5rem;
    font-size:larger;
    font-weight: 500;
    border: 2px solid darksalmon;
@@ -43,6 +51,9 @@ body {
    justify-content: space-around;
    font-size: large;
 }
+.info{
+   margin-top: 10px;
+}
 .info p{
    color: darksalmon;
    font-weight: 600;
@@ -57,7 +68,6 @@ body {
    justify-content: space-evenly;
 }
 .button a{
-   margin-right: 27px;
    text-decoration: none;
    padding: 5px 18px;
    font-size: larger;
@@ -106,6 +116,11 @@ body {
    border-color:rgb(25, 80, 180);
    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 600px) {
+ #first-hr{
+      display: none;
+   }
+}
                /* my team  */
 #myteam{
    padding: 62px 0;
@@ -122,12 +137,16 @@ body {
    background-image: url(../image/one.jpg);
    border-radius: 35px;
    padding: 20px;
-   font-size: x-large;
+   font-size: 1.5rem;
+   font-weight: 600;
    margin: 27px 53px;
 }
 .person:hover{
    background-image: url(../image/three.webp);
    transition: 160ms ease-in-out 0.1s;
+}
+.person:hover p{
+   color: rgb(235, 62, 4);
 }
 .person p{
    padding-top: 10px;
@@ -169,6 +188,7 @@ h2{
 }
 .details{
    font-size: large;
+   padding-top: 17px;
 }
 .details a{
    text-decoration: none;
