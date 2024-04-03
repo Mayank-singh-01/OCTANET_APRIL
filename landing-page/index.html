@@ -12,8 +12,9 @@
                          <!-- navigation bar  -->
    <nav id="mynev">
       <div id="home">
+         <i id="sunIcon" class="fa-solid fa-sun fa-lg" style="color: darksalmon"></i>
          <a href="#herosec">
-            <i class="fa-solid fa-house fa-lg" style="color: darksalmon;"></i>
+           <i class="fa-solid fa-house fa-lg" style="color: darksalmon;"></i>
          </a>
       </div>
       <div class="navbar">
@@ -172,6 +173,24 @@
             });
          });
       });
+        const sun = document.querySelector("#sunIcon");
+        const bgcolor = document.body.style;
+        const navbar =  document.querySelector("#mynev");
+
+         sun.addEventListener('click', function () {
+
+            if (sun.style.color === "darksalmon") {
+               bgcolor.backgroundImage = "none";
+               navbar.style.backgroundImage = "none";
+               bgcolor.backgroundColor = "rgb(37, 35, 35)";
+               navbar.style.backgroundColor = "rgb(10,10,10)";
+               sun.style.color = "white";
+            } else if (sun.style.color == "white") {
+               bgcolor.backgroundImage = "url(../image/one.jpg)";
+               navbar.style.backgroundImage = "url(../image/one.jpg)";
+               sun.style.color = "darksalmon";
+            }
+         })
    </script>
 </body>
 </html>
