@@ -106,6 +106,18 @@ body {
    justify-content: space-evenly;
    padding-top: 30px;
 }
+@media screen and (max-width: 767px) {
+   .features-1st,
+   .features-3rd {
+      margin-left: 80px;
+      text-align: center;
+   }
+}
+@media screen and (max-width: 767px) {
+   #team {
+      margin-left: 65px;
+   }
+}
 #Features p{
    text-transform: capitalize;
    text-align: center;
