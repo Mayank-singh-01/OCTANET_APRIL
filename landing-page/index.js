@@ -29,12 +29,22 @@
          });
          const menuIcon = document.querySelector("#menuIcon");
          const mymenu = document.querySelector(".myMenu");
-
+         
          menuIcon.addEventListener("click", function(){
             if (mymenu.style.display === "block") {
                mymenu.style.display = "none"; 
             } else {
                 mymenu.style.display = "block"; 
             }
+          });
 
-          })
+         const menuLinks = document.querySelectorAll(".myMenuIcon a");
+
+         menuLinks.forEach(function (menu) {
+            console.log(menu);
+            menu.addEventListener("click", function () {
+            mymenu.style.display = "none";
+            });
+         });
+
+
