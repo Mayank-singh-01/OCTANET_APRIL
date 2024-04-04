@@ -13,19 +13,20 @@
    <nav id="mynev">
       <div id="home">
          <i id="sunIcon" class="fa-solid fa-sun fa-lg" style="color: darksalmon"></i>
-         <a href="#herosec">
-           <i class="fa-solid fa-house fa-lg" style="color: darksalmon;"></i>
-         </a>
-      </div>
-      <div class="navbar">
-         <a href="#herosec">Get Started</a>
-         <a href="#myfeature">Features</a>
-         <a href="#myteam">Team</a>
-         <a href="#about">About</a>
-         <a href="#faq">FAQ</a>
+          <i id="menuIcon" class="fa-solid fa-bars fa-lg" style="color: darksalmon;"></i>
       </div>
    </nav>
 
+                           <!-- menu  -->
+  <div class="myMenu">
+     <div class="myMenuIcon">
+      <a href="#herosec">Get Started</a>
+      <a href="#myfeature">Features</a>
+      <a href="#myteam">Team</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+     </div>
+   </div>
                           <!-- hero section  -->
    <div id="herosec" class="hero">
       <!-- details  -->
@@ -160,37 +161,6 @@
       </div>
    </div>
                          <!-- java script  -->
-   <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-               behavior: 'smooth',
-               block: 'start',
-               inline: 'nearest',
-               duration: 2000
-            });
-         });
-      });
-        const sun = document.querySelector("#sunIcon");
-        const bgcolor = document.body.style;
-        const navbar =  document.querySelector("#mynev");
-
-         sun.addEventListener('click', function () {
-
-            if (sun.style.color === "darksalmon") {
-               bgcolor.backgroundImage = "none";
-               navbar.style.backgroundImage = "none";
-               bgcolor.backgroundColor = "rgb(37, 35, 35)";
-               navbar.style.backgroundColor = "rgb(10,10,10)";
-               sun.style.color = "white";
-            } else if (sun.style.color == "white") {
-               bgcolor.backgroundImage = "url(../image/one.jpg)";
-               navbar.style.backgroundImage = "url(../image/one.jpg)";
-               sun.style.color = "darksalmon";
-            }
-         })
-   </script>
+   <script src="index.js"></script>
 </body>
 </html>
