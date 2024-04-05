@@ -22,8 +22,8 @@
                navbar.style.backgroundColor = "rgb(10,10,10)";
                sun.style.color = "white";
             } else if (sun.style.color == "white") {
-               bgcolor.backgroundImage = "url(../image/one.jpg)";
-               navbar.style.backgroundImage = "url(../image/one.jpg)";
+               bgcolor.backgroundImage = "url(./image/one.jpg)";
+               navbar.style.backgroundImage = "url(./image/one.jpg)";
                sun.style.color = "darksalmon";
             }
          });
