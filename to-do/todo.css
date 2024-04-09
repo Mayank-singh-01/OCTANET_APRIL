@@ -1,0 +1,54 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+body{
+   background-image: url(../image/to-do-01.jpg);
+   height: 100vh; 
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.mainContainer{
+   margin: 70px auto 0;
+   width:35%;
+   min-height: 30%;
+   opacity: 0.9;
+   background: linear-gradient(80deg, #187c9b,#571069);
+   border-radius: 30px;
+   text-align: center;
+   color: whitesmoke;
+   padding: 32px 0;
+}
+.mainContainer h2{
+   font-size: xx-large;
+}
+.input-btn {
+   background-color: antiquewhite;
+   width: 70%;
+   margin: 20px auto;
+   border-radius: 30px;
+   display: flex;
+}
+input{
+   flex:1;
+   border: none;
+   outline: none;
+   background: transparent;
+   background: none;
+   list-style: none;
+   user-select: none;
+   font-size: 17px;
+   padding: 15px;
+
+}
+button{
+   border: none;
+   background: #ff5945;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   padding: 15px;
+   color: white;
+   cursor: pointer;
+   font-size: 15px;
+}
