@@ -11,22 +11,22 @@ body{
 }
 .mainContainer{
    margin: 70px auto 0;
-   width:35%;
-   min-height: 30%;
-   opacity: 0.9;
+   width:38%;
+   min-height: 35%;
+   opacity: 0.95;
    background: linear-gradient(80deg, #187c9b,#571069);
-   border-radius: 30px;
-   text-align: center;
+   border-radius: 25px;
    color: whitesmoke;
    padding: 32px 0;
 }
 .mainContainer h2{
    font-size: xx-large;
+   text-align: center;
 }
 .input-btn {
    background-color: antiquewhite;
-   width: 70%;
-   margin: 20px auto;
+   width: 69%;
+   margin: 23px auto;
    border-radius: 30px;
    display: flex;
 }
@@ -34,12 +34,12 @@ input{
    flex:1;
    border: none;
    outline: none;
-   background: transparent;
+   /* background: transparent; */
    background: none;
    list-style: none;
    user-select: none;
    font-size: 17px;
-   padding: 15px;
+   padding: 13px;
 
 }
 button{
@@ -47,8 +47,37 @@ button{
    background: #ff5945;
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
-   padding: 15px;
+   padding: 13px;
    color: white;
    cursor: pointer;
-   font-size: 15px;
+   font-size: 17px;
+}
+.myul{
+   position: relative;
+}
+ul li{
+   list-style: none;
+   font-size: 19px;
+   user-select: none;
+   border: 1px solid whitesmoke;
+   border-radius: 12px;
+   width: 60%;
+   padding: 5px 20px;
+   margin: 15px auto;
+}
+ul li span{
+   position: absolute;
+   right: 0;
+   width: 25px;
+   height: 25px;
+   font-size: 28px;
+   color: #af1616;
+   text-align: center;
+   margin: 0 20% 0 0;
+}
+span:hover{
+   background-color: #d12f2f;
+   color: whitesmoke;
+   cursor: pointer;
+   border-radius: 50%;
 }
